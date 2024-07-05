@@ -4,6 +4,7 @@ import { ReactTyped } from "react-typed";
 const Hero = () => {
   return (
     <div className="h-[90%] border mt-6 flex items-center flex-col justify-center">
+      <div className="w-full px-20 flex justify-end items-start my-10"></div>
       <h3 className="text-xl md:text-5xl text-white font-bold">HI, I AM</h3>
       <br />
       <h1 className="text-2xl md:text-7xl text-[#12F7D6] font-bold">ASAD.</h1>
@@ -23,8 +24,8 @@ const Hero = () => {
         />
       </h2>
       <br />
-      <button class="bg-white-500 hover:bg-[#2da391] text-white font-bold py-2 px-4 rounded border border-[#12F7D6] px-10">
-        HIRE ME
+      <button class="bg-white-500 hover:bg-[#00B8D4] text-white font-bold py-2 px-4 rounded border border-[#00B8D4] px-10">
+        LETS TALK!
       </button>
     </div>
   );

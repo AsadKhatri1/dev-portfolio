@@ -26,22 +26,22 @@ const Navbar = () => {
 
       <ul className="hidden md:flex text-white items-center gap-10">
         <li className="text-xl">
-          <a href="#" className="hover:text-[#12F7D6]">
+          <a href="#hero" className="hover:text-[#12F7D6]">
             <IoMdHome className="inline pb-1 text-[#12F7D6]" /> Home
           </a>
         </li>
         <li className="text-xl">
-          <a href="#" className="hover:text-[#12F7D6]">
+          <a href="#about" className="hover:text-[#12F7D6]">
             <MdDeveloperMode className="inline pb-1 text-[#12F7D6]" /> About
           </a>
         </li>
         <li className="text-xl">
-          <a href="#" className="hover:text-[#12F7D6]">
+          <a href="#services" className="hover:text-[#12F7D6]">
             <MdDesignServices className="inline pb-1 text-[#12F7D6]" /> Services
           </a>
         </li>
         <li className="text-xl">
-          <a href="#" className="hover:text-[#12F7D6]">
+          <a href="#contact" className="hover:text-[#12F7D6]">
             <MdContactPage className="inline pb-1 text-[#12F7D6]" /> Contact
           </a>
         </li>

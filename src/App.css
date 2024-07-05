@@ -1,0 +1,6 @@
+/* .ab {
+  background-image: url("./assets/abbg.jpg");
+} */
+html {
+  scroll-behavior: smooth;
+}

@@ -53,22 +53,38 @@ const Navbar = () => {
         }`}
       >
         <li className="p-6 text-2xl">
-          <a href="#" className="hover:text-[#12F7D6]">
+          <a
+            href="#hero"
+            className="hover:text-[#12F7D6]"
+            onClick={() => setToggle(!toggle)}
+          >
             Home
           </a>
         </li>
         <li className="p-6 text-2xl ">
-          <a href="#" className="hover:text-[#12F7D6] ">
+          <a
+            href="#about"
+            className="hover:text-[#12F7D6] "
+            onClick={() => setToggle(!toggle)}
+          >
             About
           </a>
         </li>
         <li className="p-6 text-2xl ">
-          <a href="#" className="hover:text-[#12F7D6] ">
+          <a
+            href="#services"
+            className="hover:text-[#12F7D6] "
+            onClick={() => setToggle(!toggle)}
+          >
             Services
           </a>
         </li>
         <li className="p-6 text-2xl ">
-          <a href="#" className="hover:text-[#12F7D6] ">
+          <a
+            href="#"
+            className="hover:text-[#12F7D6] "
+            onClick={() => setToggle(!toggle)}
+          >
             Contact
           </a>
         </li>

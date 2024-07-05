@@ -5,7 +5,7 @@ const Header = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <div className="bg-[#292F36] p-4">
-      <div className="max-w-[1240px] py-[18px] flex justify-between items-center mx-auto">
+      <div className="max-w-[1240px] py-[12px] flex justify-between items-center mx-auto">
         <div className="text-3xl text-white font-bold">
           ASAD<span className="text-[#28c2ab]"> KHATRI</span>
         </div>
@@ -22,22 +22,22 @@ const Header = () => {
         )}
 
         <ul className="hidden md:flex text-white align-middle gap-10">
-          <li>
+          <li className="text-xl">
             <a href="#" className="hover:text-[#12F7D6]">
               Home
             </a>
           </li>
-          <li>
+          <li className="text-xl">
             <a href="#" className="hover:text-[#12F7D6]">
               About
             </a>
           </li>
-          <li>
+          <li className="text-xl">
             <a href="#" className="hover:text-[#12F7D6]">
               Services
             </a>
           </li>
-          <li>
+          <li className="text-xl">
             <a href="#" className="hover:text-[#12F7D6]">
               Contact
             </a>
@@ -45,26 +45,26 @@ const Header = () => {
         </ul>
         {/* responsive menu */}
         <ul
-          className={`md:hidden w-full h-screen text-white fixed bg-[#292F36]  top-[103px] ${
-            toggle ? `left-[0]` : `left-[100%]`
+          className={`duration-500 md:hidden w-full h-screen text-white fixed bg-[#292F36]  top-[92px] ${
+            toggle ? `left-[0]` : `left-[-100%]`
           }`}
         >
-          <li className="p-6 text-2xl">
+          <li className="p-6 text-2xl border">
             <a href="#" className="hover:text-[#12F7D6]">
               Home
             </a>
           </li>
-          <li className="p-6 text-2xl">
+          <li className="p-6 text-2xl border">
             <a href="#" className="hover:text-[#12F7D6] ">
               About
             </a>
           </li>
-          <li className="p-6 text-2xl">
+          <li className="p-6 text-2xl border">
             <a href="#" className="hover:text-[#12F7D6] ">
               Services
             </a>
           </li>
-          <li className="p-6 text-2xl">
+          <li className="p-6 text-2xl border">
             <a href="#" className="hover:text-[#12F7D6] ">
               Contact
             </a>

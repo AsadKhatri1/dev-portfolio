@@ -3,7 +3,7 @@ import { ReactTyped } from "react-typed";
 
 const Hero = () => {
   return (
-    <div className="h-[60%] md:h-[90%] border mt-6 flex items-center flex-col justify-center">
+    <div className="h-[90%] border mt-6 flex items-center flex-col justify-center">
       <h3 className="text-xl md:text-5xl text-white font-bold">HI, I AM</h3>
       <br />
       <h1 className="text-2xl md:text-7xl text-[#12F7D6] font-bold">ASAD.</h1>

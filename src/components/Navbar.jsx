@@ -48,7 +48,7 @@ const Navbar = () => {
       </ul>
       {/* responsive menu */}
       <ul
-        className={`duration-500 md:hidden w-1/2 h-screen text-white fixed bg-[#292F36]  top-[83px] ${
+        className={`duration-500 md:hidden w-1/2 h-screen text-white fixed bg-[#1a7886]  top-[83px] ${
           toggle ? `left-[0]` : `left-[-100%]`
         }`}
       >

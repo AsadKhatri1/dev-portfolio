@@ -7,6 +7,7 @@ import js from "../assets/js.png";
 import html from "../assets/html.png";
 import css from "../assets/css.jpeg";
 import git from "../assets/git.png";
+import tailwind from "../assets/tailwind.jpeg";
 import github from "../assets/github.png";
 import express from "../assets/ex.png";
 import wordpress from "../assets/wordpress.png";
@@ -72,7 +73,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="my-8 bg-white mx-10">
+      <div className="my-20 bg-white mx-10">
         <h1 className="text-2xl md:text-4xl text-center text-[#474b4a] font-bold my-3">
           My <span className="text-[#12F7D6] ">Tech Stack</span>
         </h1>
@@ -94,34 +95,48 @@ const About = () => {
             itemClass="carousel-item-padding-40-px"
           >
             <div className=" flex items-center flex-col justify-center">
-              <img src={react} alt="reactjs" className="w-32" />
+              <img src={react} alt="reactjs" className="w-20" />
+              <h3 className="font-bold">ReactJS</h3>
             </div>
-            <div className=" flex items-center justify-center">
-              <img src={mongo} alt="mongodb" className="w-32" />
+            <div className=" flex items-center flex-col  justify-center">
+              <img src={mongo} alt="mongodb" className="w-20" />
+              <h3 className="font-bold">MongoDB</h3>
             </div>
-            <div className=" flex items-center justify-center">
-              <img src={node} alt="nodejs" className="w-32" />
+            <div className=" flex items-center flex-col  justify-center">
+              <img src={node} alt="nodejs" className="w-20" />
+              <h3 className="font-bold">NodeJS</h3>
             </div>
-            <div className=" flex items-center justify-center">
-              <img src={js} alt="js" className="w-32" />
+            <div className=" flex items-center flex-col justify-center">
+              <img src={js} alt="js" className="w-20" />
+              <h3 className="font-bold">JavaScript</h3>
             </div>
-            <div className=" flex items-center justify-center">
-              <img src={express} alt="express" className="w-32 h-32" />
+            <div className=" flex items-center flex-col justify-center">
+              <img src={express} alt="express" className="w-20 h-20" />
+              <h3 className="font-bold">ExpressJS</h3>
             </div>
-            <div className=" flex items-center justify-center">
-              <img src={html} alt="html" className="w-32 h-32" />
+            <div className=" flex items-center flex-col justify-center">
+              <img src={html} alt="html" className="w-20 h-20" />
+              <h3 className="font-bold">HTML 5</h3>
             </div>
-            <div className=" flex items-center justify-center">
-              <img src={css} alt="css" className="w-32 h-32" />
+            <div className=" flex items-center flex-col justify-center">
+              <img src={css} alt="css" className="w-20 h-20" />
+              <h3 className="font-bold">CSS 3</h3>
             </div>
-            <div className=" flex items-center justify-center">
-              <img src={git} alt="express" className="w-32" />
+            <div className=" flex items-center flex-col  justify-center">
+              <img src={git} alt="express" className="w-20" />
+              <h3 className="font-bold">Git</h3>
             </div>
-            <div className=" flex items-center justify-center">
-              <img src={github} alt="express" className="w-32" />
+            <div className=" flex items-center flex-col  justify-center">
+              <img src={github} alt="express" className="w-20" />
+              <h3 className="font-bold">GitHub</h3>
             </div>
-            <div className=" flex items-center justify-center">
-              <img src={wordpress} alt="express" className="w-32" />
+            <div className=" flex items-center flex-col justify-center">
+              <img src={wordpress} alt="express" className="w-20" />
+              <h3 className="font-bold">Wordpress</h3>
+            </div>
+            <div className=" flex items-center flex-col justify-center">
+              <img src={tailwind} alt="express" className="w-20 " />
+              <h3 className="font-bold mt-2">TailwindCSS</h3>
             </div>
           </Carousel>
         </div>

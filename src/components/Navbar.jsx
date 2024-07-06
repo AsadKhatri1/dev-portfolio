@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { AiOutlineClose } from "react-icons/ai";
 import { IoMdHome } from "react-icons/io";
@@ -7,6 +7,20 @@ import { MdDesignServices } from "react-icons/md";
 import { MdContactPage } from "react-icons/md";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setToggle(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <div className="max-w-[1240px] py-[12px] flex justify-between items-center mx-auto">
       <div className="text-xl md:text-3xl text-white font-bold">
@@ -37,7 +51,8 @@ const Navbar = () => {
         </li>
         <li className="text-xl">
           <a href="#services" className="hover:text-[#12F7D6]">
-            <MdDesignServices className="inline pb-1 text-[#12F7D6]" /> Services
+            <MdDesignServices className="inline pb-1 text-[#12F7D6]" />{" "}
+            Portfolio
           </a>
         </li>
         <li className="text-xl">
@@ -48,17 +63,20 @@ const Navbar = () => {
       </ul>
       {/* responsive menu */}
       <ul
-        className={`duration-500 md:hidden w-1/2 h-screen text-white fixed bg-[#1a7886]  top-[83px] ${
+        className={`duration-500 md:hidden w-2/3 h-screen text-white fixed bg-[#1a7886]  top-[0px] ${
           toggle ? `left-[0]` : `left-[-100%]`
         }`}
       >
+        <div className="text-xl md:text-3xl text-white font-bold p-5">
+          ASAD<span className="text-[#28c2ab]"> KHATRI</span>
+        </div>
         <li className="p-6 text-2xl">
           <a
             href="#hero"
             className="hover:text-[#12F7D6]"
             onClick={() => setToggle(!toggle)}
           >
-            Home
+            <IoMdHome className="inline pb-1 text-[#12F7D6]" /> Home
           </a>
         </li>
         <li className="p-6 text-2xl ">
@@ -67,7 +85,7 @@ const Navbar = () => {
             className="hover:text-[#12F7D6] "
             onClick={() => setToggle(!toggle)}
           >
-            About
+            <MdDeveloperMode className="inline pb-1 text-[#12F7D6]" /> About
           </a>
         </li>
         <li className="p-6 text-2xl ">
@@ -76,7 +94,8 @@ const Navbar = () => {
             className="hover:text-[#12F7D6] "
             onClick={() => setToggle(!toggle)}
           >
-            Services
+            <MdDesignServices className="inline pb-1 text-[#12F7D6]" />{" "}
+            Portfolio
           </a>
         </li>
         <li className="p-6 text-2xl ">
@@ -85,7 +104,7 @@ const Navbar = () => {
             className="hover:text-[#12F7D6] "
             onClick={() => setToggle(!toggle)}
           >
-            Contact
+            <MdContactPage className="inline pb-1 text-[#12F7D6]" /> Contact
           </a>
         </li>
       </ul>

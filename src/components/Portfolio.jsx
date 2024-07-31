@@ -77,7 +77,7 @@ const Portfolio = () => {
         </a>
         {/* 1st card */}
         <a
-          href="https://customdigitizers.vercel.app/"
+          href="https://ecommerce-client-bay.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
         >

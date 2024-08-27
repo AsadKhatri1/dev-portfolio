@@ -2,6 +2,8 @@ import React from "react";
 import manage from "../assets/manage.jpg";
 import threads from "../assets/threads.png";
 import ecommerce from "../assets/ecommerce.jpg";
+import { Canvas } from "@react-three/fiber";
+
 const Portfolio = () => {
   return (
     <div

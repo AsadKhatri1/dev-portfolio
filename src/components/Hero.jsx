@@ -20,16 +20,18 @@ const Hero = () => {
         I PROVIDE
         <ReactTyped
           className=" text-[#12F7D6] pl-2"
-          strings={[" WEB DESIGNING ", " WEB DEVELOPMENT ", " WEB GROWTH "]}
+          strings={[" WEB DESIGNING. ", " WEB DEVELOPMENT. ", " WEB GROWTH. "]}
           typeSpeed={100}
           backSpeed={60}
           loop={true}
         />
       </h2>
       <br />
-      <button class="bg-white-500 hover:bg-[#12F7D6] text-white font-bold py-2 rounded border border-[#12F7D6] px-10">
-        LETS TALK!
-      </button>
+      <a href="#services">
+        <button class="bg-white-500 hover:bg-[#12F7D6] text-white font-bold py-2 rounded border border-[#12F7D6] px-10">
+          MY WORK
+        </button>
+      </a>
     </div>
   );
 };

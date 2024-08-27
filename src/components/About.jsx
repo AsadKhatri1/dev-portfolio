@@ -67,9 +67,11 @@ const About = () => {
               development to deliver high-quality solutions that meet both
               functional and aesthetic requirements.
             </h2>
-            <button class="bg-[#12F7D6] hover:bg-[#49ddc7] px-10 mt-10  text-[#474b4a] font-bold py-2 rounded border border-[#12F7D6] ">
-              View My Work
-            </button>
+            <a href="#contact ">
+              <button class="bg-[#12F7D6] hover:bg-[#49ddc7] px-10 mt-10  text-[#474b4a] font-bold py-2 rounded border border-[#12F7D6] ">
+                Contact
+              </button>
+            </a>
           </div>
         </div>
       </div>

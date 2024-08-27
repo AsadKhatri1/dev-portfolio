@@ -100,7 +100,7 @@ const Navbar = () => {
         </li>
         <li className="p-6 text-2xl ">
           <a
-            href="#"
+            href="#contact"
             className="hover:text-[#12F7D6] "
             onClick={() => setToggle(!toggle)}
           >
